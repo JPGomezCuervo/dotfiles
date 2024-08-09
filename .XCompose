@@ -1,0 +1,14 @@
+include "/usr/share/X11/locale/en_US.UTF-8/Compose"
+
+<Multi_key> <a> <a> : "á"   U00E1 # LATIN SMALL LETTER A WITH ACUTE
+<Multi_key> <e> <e> : "é"   U00E9 # LATIN SMALL LETTER E WITH ACUTE
+<Multi_key> <i> <i> : "í"   U00ED # LATIN SMALL LETTER I WITH ACUTE
+<Multi_key> <o> <o> : "ó"   U00F3 # LATIN SMALL LETTER O WITH ACUTE
+<Multi_key> <u> <u> : "ú"   U00FA # LATIN SMALL LETTER U WITH ACUTE
+<Multi_key> <A> <A> : "Á"   U00C1 # LATIN CAPITAL LETTER A WITH ACUTE
+<Multi_key> <E> <E> : "É"   U00C9 # LATIN CAPITAL LETTER E WITH ACUTE
+<Multi_key> <I> <I> : "Í"   U00CD # LATIN CAPITAL LETTER I WITH ACUTE
+<Multi_key> <O> <O> : "Ó"   U00D3 # LATIN CAPITAL LETTER O WITH ACUTE
+<Multi_key> <U> <U> : "Ú"   U00DA # LATIN CAPITAL LETTER U WITH ACUTE
+<Multi_key> <n> <n> : "ñ"   U00F1 # LATIN SMALL LETTER N WITH TILDE
+<Multi_key> <N> <N> : "Ñ"   U00D1 # LATIN CAPITAL LETTER N WITH TILDE
