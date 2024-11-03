@@ -1,7 +1,7 @@
 -- remap
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-vim.keymap.set("n", "pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set({"n", "x"}, "cp", '"+y"') --x covers all visual modes
 vim.keymap.set({"n", "x"}, "cv", '"+p"')
@@ -21,6 +21,8 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.hidden = true -- change between buffers without saving
 vim.o.colorcolumn = "80"
+vim.o.path += **
+vim.o.wildignore += **/node_modules/**
 
 -- default size of TAB is 8 spaces. Perfect :)
 vim.o.expandtab = true
