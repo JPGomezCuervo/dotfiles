@@ -21,8 +21,11 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.hidden = true -- change between buffers without saving
 vim.o.colorcolumn = "80"
-vim.o.path += **
-vim.o.wildignore += **/node_modules/**
+-- Correctly append to 'path'
+vim.o.path = vim.o.path .. ",**"
+
+-- Correctly append to 'wildignore'
+vim.o.wildignore = vim.o.wildignore .. ",**/node_modules/**"
 
 -- default size of TAB is 8 spaces. Perfect :)
 vim.o.expandtab = true
