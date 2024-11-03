@@ -21,18 +21,16 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.hidden = true -- change between buffers without saving
 vim.o.colorcolumn = "80"
--- Correctly append to 'path'
-vim.o.path = vim.o.path .. ",**"
-
--- Correctly append to 'wildignore'
-vim.o.wildignore = vim.o.wildignore .. ",**/node_modules/**"
-
--- default size of TAB is 8 spaces. Perfect :)
 vim.o.expandtab = true
 vim.o.smartindent = true
 vim.o.autoindent = true
 vim.o.smarttab = true
+vim.o.wildmenu = true
 
+vim.o.wildignore:append("**/node_modules/**")
+vim.opt.path:append("**")
+
+-- vim.o.wildignore = vim.o.wildignore .. ",**/node_modules/**"
 
 -- package manager: Lazyvim
 -- Bootstrap lazy.nvim
