@@ -17,6 +17,7 @@ vim.keymap.set("n", "<esc>", ":set hls! <CR>")
 -- options
 vim.o.timeoutlen = 500
 vim.o.relativenumber = true
+vim.o.number = true
 vim.o.guicursor = ""
 vim.o.scrolloff = 4
 vim.o.hlsearch = true
@@ -58,32 +59,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 
-local plugins = {
-	{
-		"ibhagwan/fzf-lua",
-	               init = function()
-	                       vim.keymap.set(
-	                       "n",
-	                       "<leader>pf",
-	                       require('fzf-lua').files,
-	                       { desc = "Fzf Files" })
-	               end,
-
-                       opts = { 
-                               winopts = {
-                                       fullscreen = true,
-                                       preview = {
-                                               layout = "horizontal",
-                                               delay = 0,
-                                       },
-                               },
-                       },
-	},
-}
-
-local opts = {
-        checker = {enabled = false},
-}
 
 -- Setup lazy.nvim
-require("lazy").setup(plugins, opts)
+require("lazy").setup({
+        spec = "plugins",
+        checker = { enabled = true },
+})
