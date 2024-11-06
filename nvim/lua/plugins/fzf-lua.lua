@@ -12,6 +12,10 @@ return {
                                         hidden = 'hidden',
                                 },
                         },
+
+                        grep = {
+                                rg_opts = "--column --line-number --no-heading --color=always --smart-case --max-columns=4096 --glob '!node_modules/*' --glob '!tags' -e "
+                        },
                         keymap = {
                                 builtin = {
                                         false,
