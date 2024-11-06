@@ -64,6 +64,7 @@ local function set_colors()
     ["@function"] = { fg = colors.white },
     ["@keyword.return"] = { fg = colors.blue },
     ["@keyword.c"] = { fg = colors.blue },
+    ["@keyword.modifier.c"] = {link = "@keyword.c"},
     ["@type"] = { fg = colors.blue },
     ["@type.builtin"] = { link = "@type" },
     ["@lsp.type.macro.c"] = { fg = colors.blue },
@@ -74,14 +75,10 @@ local function set_colors()
     ["@field"] = {fg = colors.white},
     ["@constructor"] = { link = "@punctuation.bracket" },
 
-
-		Pmenu = { fg = colors.white,bg = colors.bg_blue },
+    Pmenu = { fg = colors.white,bg = colors.bg_blue },
     PmenuSel = { fg = "NONE", bg = colors.sel_bg_blue },
     PmenuSBar = { bg = colors.bg_blue },
     PmenuThumb = { bg = colors.sel_bg_blue },
-
-    lualine_b_diff_removed_normal = { fg = colors.blue },
-
 
   }
   for group, highlight in pairs(highlight_groups) do
