@@ -33,6 +33,7 @@ local function set_colors()
     Identifier = { fg = colors.white },
     Function = { fg = colors.white },
     Keyword = { fg = colors.white },
+    String = { fg = colors.green},
     Number = { fg = colors.white },
 		Operator = { fg = colors.white },
     Constant = { fg = colors.white },
@@ -56,6 +57,8 @@ local function set_colors()
     NormalFloat = { fg = colors.white, bg = colors.black },
     NonText = { fg = colors.white },
 
+    ["@tag.vue"] = { fg = colors.white},
+    ["@function.method.vue"] = { fg = colors.green},
     ["@keyword.import"] = { fg = colors.white },
     ["@variable"] = { fg = colors.white },
     ["@string"] = { fg = colors.green },

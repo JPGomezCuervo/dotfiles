@@ -24,12 +24,15 @@ vim.o.hlsearch = true
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.hidden = true
-vim.o.colorcolumn = "80" vim.o.expandtab = true
+vim.o.colorcolumn = "80" 
+vim.o.expandtab = true
 vim.o.smartindent = true
 vim.o.autoindent = true
 vim.o.smarttab = true
 vim.o.wildignorecase = true
-vim.opt.wildignore:append("**/node_modules/")
+vim.o.cmdheight = 0
+vim.o.omnifunc = "syntaxcomplete#Complete"
+vim.opt.wildignore = "**/node_modules/*"
 vim.opt.path:append("**")
 vim.opt.cursorline = true
 
